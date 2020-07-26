@@ -1,25 +1,35 @@
 const Factory = require('rosie').Factory
 const faker = require('faker')
 const uuid = require('uuid').v4
-const fs = require('fs')
-const path = require('path')
 const utils = require('../../utils')
+const Template = require("../template");
+const path = require("path");
 
-const outDir = '../../db/jaksally/groups.json'
+class Groups extends Template {
 
-Factory.define('address')
-  .attr('street', () => faker.address.streetName())
-  .attr('town', () => faker.address.county())
-  .attr('region', () => faker.address.state())
-  .attr('country', () => 'Ghana')
+  getFactoryName() {
+    return 'groups'
+  }
 
-Factory.define('group')
-  .attr('id', () => uuid())
-  .attr('name', () => faker.company.companyName())
-  .attr('members' ,() => utils.range(30, 50))
-  .attr('address', () => Factory.build('address'))
-  .attr('formation', () => new Date().toISOString())
+  getAttrs() {
+    Factory.define('address')
+      .attr('street', () => faker.address.streetName())
+      .attr('town', () => faker.address.county())
+      .attr('region', () => faker.address.state())
+      .attr('country', () => 'Ghana')
 
-const data = Factory.buildList('group', 20)
+    return {
+      id: () => uuid(),
+      name: () => faker.company.companyName(),
+      members: () => utils.range(30, 50),
+      address: () => Factory.build('address'),
+      formation: () => new Date().toISOString(),
+    };
+  }
 
-fs.writeFileSync(path.resolve(__dirname, outDir), JSON.stringify(data, null, 2))
+  getSaveFile() {
+    return path.resolve(__dirname, '../../db/jaksally/groups.json')
+  }
+}
+
+new Groups().save()
