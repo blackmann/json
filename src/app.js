@@ -1,5 +1,5 @@
 const express = require('express')
-
+const cors = require('cors')
 const fs = require('fs')
 const path = require('path')
 
@@ -69,6 +69,7 @@ router.all(/\w+/,
 
 const app = express()
 
+app.use(cors())
 app.use('/', router)
 
 module.exports = app
