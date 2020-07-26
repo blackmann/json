@@ -9,7 +9,7 @@ const outDir = '../../db/jaksally/groups.json'
 
 Factory.define('address')
   .attr('street', () => faker.address.streetName())
-  .attr('town', () => faker.address.city)
+  .attr('town', () => faker.address.county())
   .attr('region', () => faker.address.state())
   .attr('country', () => 'Ghana')
 
