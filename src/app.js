@@ -37,6 +37,45 @@ function walk(top, data) {
 
 walk(path.resolve(__dirname, '../db'), data)
 
+console.log(data)
+
+const router = express.Router()
+
+router.all(/(sw.js|favicon.ico)/,
+  (req, res) => {
+    res.sendStatus(404)
+  })
+
+router.all(/\w+/,
+  (req, res) => {
+    const s = req.path.split('/')
+
+    let rData = data
+
+    try {
+      s.slice(1).forEach((cursor) => {
+        // to accommodate trailing slash
+        if (cursor) {
+          rData = rData[cursor];
+        }
+      })
+
+      if (!rData) {
+        throw new Error('Not found')
+      }
+
+      console.log(`RES: ${req.path} 200 ${rData.toString().length}`)
+      res.json(rData || {})
+    } catch (e) {
+      res.status(404)
+      res.json({})
+
+      console.log(`ERR: ${req.path} 404 ${e.type}`)
+    }
+  })
+
 const app = express()
+
+app.use('/', router)
 
 module.exports = app
