@@ -1,0 +1,29 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "Json placeholder for my dummies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackmann/json.git"
+  },
+  "keywords": [
+    "json",
+    "placeholder",
+    "server",
+    "node"
+  ],
+  "author": "De-Great Yartey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackmann/json/issues"
+  },
+  "homepage": "https://github.com/blackmann/json#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
