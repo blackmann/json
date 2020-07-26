@@ -1,6 +1,222 @@
 [
   {
-    "id": 1,
-    "name": "Nankese Warriors"
+    "id": "16187e25-612e-47ae-993d-e04cc482e743",
+    "name": "Miller Group",
+    "members": 38,
+    "address": {
+      "street": "Wisozk Oval",
+      "region": "Vermont",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.580Z"
+  },
+  {
+    "id": "ff511b47-d19d-4330-a5ba-004f757f2b16",
+    "name": "Brekke - Toy",
+    "members": 43,
+    "address": {
+      "street": "Reinger Fields",
+      "region": "Ohio",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.580Z"
+  },
+  {
+    "id": "0b7d1e3f-b723-4b48-855d-39a99acd9176",
+    "name": "Eichmann, Okuneva and Borer",
+    "members": 41,
+    "address": {
+      "street": "Wisoky Ports",
+      "region": "Illinois",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.580Z"
+  },
+  {
+    "id": "66326051-26e8-4acd-af72-2efab006aa69",
+    "name": "Krajcik LLC",
+    "members": 45,
+    "address": {
+      "street": "Jude Stravenue",
+      "region": "Rhode Island",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "0a55b356-d6bf-4fdb-9921-f47b9e0d7dc3",
+    "name": "Nolan - Predovic",
+    "members": 32,
+    "address": {
+      "street": "Lia Village",
+      "region": "Massachusetts",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "7eefd176-a0de-4aa7-8466-db109caf355b",
+    "name": "Bailey LLC",
+    "members": 31,
+    "address": {
+      "street": "Mohr Dale",
+      "region": "Colorado",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "aec62912-ed1c-45e7-af52-c78d7d0aeb25",
+    "name": "Nikolaus - Zulauf",
+    "members": 43,
+    "address": {
+      "street": "Kaylin Greens",
+      "region": "Pennsylvania",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "46b5f9e1-5f34-491b-b2e6-3aa08a5f6f35",
+    "name": "Skiles - Altenwerth",
+    "members": 40,
+    "address": {
+      "street": "Alexandria Meadow",
+      "region": "Kentucky",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "5c564722-5208-44e5-a254-586b454238f9",
+    "name": "Satterfield, Gaylord and Murray",
+    "members": 37,
+    "address": {
+      "street": "Dickens Islands",
+      "region": "North Dakota",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "412e4886-8b99-4d20-aa47-5cd714a2833a",
+    "name": "Robel, Heidenreich and Schoen",
+    "members": 34,
+    "address": {
+      "street": "Vada Fall",
+      "region": "South Carolina",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "366f7490-a63b-4ca6-a346-7287f4a31ce2",
+    "name": "Sporer Inc",
+    "members": 36,
+    "address": {
+      "street": "Unique Bridge",
+      "region": "Connecticut",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "21445e29-4d00-4811-bac4-4effc96db024",
+    "name": "Kuhlman, Walter and Breitenberg",
+    "members": 33,
+    "address": {
+      "street": "Gutmann Estates",
+      "region": "Georgia",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "6dd33c7c-113e-44af-aa4b-6684348c0e5b",
+    "name": "Frami - Langosh",
+    "members": 36,
+    "address": {
+      "street": "Pollich Mills",
+      "region": "New Mexico",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "cef9cba6-a21c-4b42-a8d3-b53c38e0a3b7",
+    "name": "Cummerata and Sons",
+    "members": 35,
+    "address": {
+      "street": "Hilpert Drive",
+      "region": "West Virginia",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "b3a83de6-d448-48e4-8f06-682f1711b925",
+    "name": "Lynch, Ledner and Kunze",
+    "members": 43,
+    "address": {
+      "street": "Juvenal Garden",
+      "region": "Iowa",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "b96cae2e-a427-46aa-acae-a5bb467e7e42",
+    "name": "Collins LLC",
+    "members": 30,
+    "address": {
+      "street": "Bins Inlet",
+      "region": "Vermont",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "3df59c61-5992-4b99-a9ce-d98991205e83",
+    "name": "Stroman Inc",
+    "members": 37,
+    "address": {
+      "street": "Huels Divide",
+      "region": "Colorado",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "1a1cf06c-10f0-4f13-a767-be1abb4efebc",
+    "name": "Torphy LLC",
+    "members": 42,
+    "address": {
+      "street": "Jaskolski Burgs",
+      "region": "Alabama",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "8e87a2a3-cdd2-4660-8044-eff0caaa6525",
+    "name": "Durgan, Moore and Grimes",
+    "members": 34,
+    "address": {
+      "street": "Sipes Stream",
+      "region": "Delaware",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
+  },
+  {
+    "id": "a8ed47a3-bd54-4d9e-a9f0-fb13e855f16e",
+    "name": "Jones, Walter and Wehner",
+    "members": 32,
+    "address": {
+      "street": "Walker Locks",
+      "region": "New Mexico",
+      "country": "Ghana"
+    },
+    "formation": "2020-07-26T16:12:57.581Z"
   }
 ]

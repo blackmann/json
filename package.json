@@ -24,6 +24,16 @@
   },
   "homepage": "https://github.com/blackmann/json#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.2.0"
+  },
+  "engines": {
+    "node": "13.8.0",
+    "npm": "6.13.6",
+    "yarn": "1.22.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "rosie": "^2.0.1"
   }
 }

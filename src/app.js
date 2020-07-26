@@ -37,14 +37,7 @@ function walk(top, data) {
 
 walk(path.resolve(__dirname, '../db'), data)
 
-console.log(data)
-
 const router = express.Router()
-
-router.all(/(sw.js|favicon.ico)/,
-  (req, res) => {
-    res.sendStatus(404)
-  })
 
 router.all(/\w+/,
   (req, res) => {
@@ -70,7 +63,7 @@ router.all(/\w+/,
       res.status(404)
       res.json({})
 
-      console.log(`ERR: ${req.path} 404 ${e.type}`)
+      console.log(`ERR: ${req.path} 404 `)
     }
   })
 
