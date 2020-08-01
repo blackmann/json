@@ -2,6 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const fs = require('fs')
 const path = require('path')
+const querystring = require('querystring')
+const utils = require('../utils')
 
 const data = {}
 
@@ -49,15 +51,26 @@ router.all(/\w+/,
       s.slice(1).forEach((cursor) => {
         // to accommodate trailing slash
         if (cursor) {
-          rData = rData[cursor];
+          rData = rData[cursor]
         }
       })
 
       if (!rData) {
-        throw new Error('Not found')
+        throw Error('Not found')
       }
 
-      console.log(`RES: ${req.path} 200 ${rData.toString().length}`)
+      const params = new URLSearchParams(querystring.stringify(req.query))
+      if (Array.isArray(rData)) {
+        for (const [k, v] of params) {
+          rData = rData.filter((it) => {
+            const d = utils.slice(it, k)
+
+            return d.matcher(d.value, v)
+          })
+        }
+      }
+
+      console.log(`RES: ${req.path}?${params.toString()} 200 ${rData.toString().length}`)
       res.json(rData || {})
     } catch (e) {
       res.status(404)

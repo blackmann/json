@@ -18,7 +18,10 @@ A call to `/authors/books` will look in the `./db` directory for `authors` folde
 
 Generating dummies is easy. Extend the `Template` class and define your data structure and optionally the generation count, etc. Look at the `generators` dir for examples.
 
-###### inspiration
+# Features
+TODO
+
+# Inspiration
 When working on frontend projects, I usually use dummy json data to populate my views. There are 2 approaches for populating this data;
 - By hand then upload to [jsonbin.io](https://jsonbin.io)
 - Generate with [JSON Generator](https://next.json-generator.com) then copy to jsonbin then consume

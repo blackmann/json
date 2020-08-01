@@ -2,8 +2,8 @@ const Factory = require('rosie').Factory
 const faker = require('faker')
 const uuid = require('uuid').v4
 const utils = require('../../utils')
-const Template = require("../template");
-const path = require("path");
+const Template = require("../template")
+const path = require("path")
 
 class Groups extends Template {
 
