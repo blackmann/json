@@ -19,6 +19,10 @@ class Template {
     return 'sample'
   }
 
+  isList() {
+    return true
+  }
+
   getCount() {
     return 20
   }
@@ -27,7 +31,11 @@ class Template {
     Factory.define(this.getFactoryName())
       .attrs(this.getAttrs())
 
-    return Factory.buildList(this.getFactoryName(), this.getCount())
+    if (this.isList()) {
+      return Factory.buildList(this.getFactoryName(), this.getCount())
+    }
+
+    return Factory.build(this.getFactoryName())
   }
 
   save() {
