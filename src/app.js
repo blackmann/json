@@ -7,6 +7,13 @@ const utils = require('../utils')
 
 const data = {}
 
+URLSearchParams.prototype.pop = function(key) {
+  const value = this.get(key)
+  this.delete(key)
+
+  return value
+}
+
 // walk through the db directory and create db
 // from each dir, making use of the path
 function walk(top, data) {
@@ -60,7 +67,14 @@ router.all(/\w+/,
       }
 
       const params = new URLSearchParams(querystring.stringify(req.query))
+
+      const originalParams = params.toString()
+
       if (Array.isArray(rData)) {
+        // remove query
+        const limit = parseInt(params.pop('limit')) || 0
+        const offset = parseInt(params.pop('offset')) || 0
+
         for (const [k, v] of params) {
           rData = rData.filter((it) => {
             const d = utils.slice(it, k)
@@ -68,9 +82,11 @@ router.all(/\w+/,
             return d.matcher(d.value, v)
           })
         }
+
+        rData = limit > 0 ? rData.slice(offset, offset + limit) : rData.slice(offset)
       }
 
-      console.log(`RES: ${req.path}?${params.toString()} 200 ${rData.toString().length}`)
+      console.log(`RES: ${req.path}?${originalParams} 200 ${rData.toString().length}`)
       res.json(rData || {})
     } catch (e) {
       res.status(404)
